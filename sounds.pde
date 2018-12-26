@@ -1,19 +1,18 @@
 import processing.sound.*;
 
-PImage img;
-
-int x = 0;
-int time;
 int timeDelta = 100; // milliseconds
-
-SinOsc[] oscillators;
-
+int resolution = 100;
 float logFreqStart = 2;
 float logFreqEnd = 4;
 
+PImage img;
+int x = 0;
+int time;
+SinOsc[] oscillators;
+
 void setup() {
   img = loadImage("test.png");
-  img.resize(0, 100);
+  img.resize(0, resolution);
   img.loadPixels();
   oscillators = new SinOsc[img.height];
   for (int i = 0; i < oscillators.length; i++) {
