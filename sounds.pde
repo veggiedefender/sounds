@@ -4,7 +4,7 @@ PImage img;
 
 int x = 0;
 int time;
-int timeDelta = 15; // milliseconds
+int timeDelta = 100; // milliseconds
 
 SinOsc[] oscillators;
 
@@ -12,8 +12,8 @@ float logFreqStart = 2;
 float logFreqEnd = 4;
 
 void setup() {
-  img = loadImage("message.png");
-  img.resize(0, 400);
+  img = loadImage("test.png");
+  img.resize(0, 100);
   img.loadPixels();
   oscillators = new SinOsc[img.height];
   for (int i = 0; i < oscillators.length; i++) {
