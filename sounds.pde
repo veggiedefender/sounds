@@ -11,6 +11,7 @@ int time;
 SinOsc[] oscillators;
 
 void setup() {
+  frame.setVisible(false);
   img = loadImage("test.png");
   img.resize(0, resolution);
   img.loadPixels();
